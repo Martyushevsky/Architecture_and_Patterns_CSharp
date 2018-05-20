@@ -4,7 +4,8 @@
 
     public interface IView
     {
-        event ViewHandler<IView> AddString;
-        void SetController(IController cont);
+        event ViewHandler<IView> StringAdded;
+        event ViewHandler<IView> ButtonPressed;
+        void SetController(IController controller);
     }
 }

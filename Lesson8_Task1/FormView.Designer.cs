@@ -1,6 +1,6 @@
 ﻿namespace Lesson8_Task1
 {
-    partial class Form1
+    partial class FormView
     {
         /// <summary>
         /// Required designer variable.
@@ -39,6 +39,7 @@
             this.InputField.Name = "InputField";
             this.InputField.Size = new System.Drawing.Size(260, 20);
             this.InputField.TabIndex = 0;
+            this.InputField.Leave += new System.EventHandler(this.InputField_Leave);
             // 
             // DataListBox
             // 
@@ -58,7 +59,7 @@
             this.LoadData.UseVisualStyleBackColor = true;
             this.LoadData.Click += new System.EventHandler(this.LoadData_Click);
             // 
-            // Form1
+            // FormView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -66,11 +67,10 @@
             this.Controls.Add(this.LoadData);
             this.Controls.Add(this.DataListBox);
             this.Controls.Add(this.InputField);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "FormView";
+            this.Text = "FormView";
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion

@@ -8,13 +8,13 @@ namespace Lesson8_Task1
         [STAThread]
         static void Main()
         {
-
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            Form1 view = new Form1();
-            IModel mdl = new ListModel();
-            IController cnt = new IncrementController(view, mdl);
+            FormView view = new FormView();
+            IModel model = new FormModel();
+            IController controller = new FormController(view, model);
+
             Application.Run(view);
         }
     }
